@@ -54,7 +54,7 @@ app.get('/finder', async (req, res) => {
 
     await page.goto(targetURL, {
       waitUntil: 'networkidle2',
-      timeout: 20000
+      timeout: 30000
     });
 
     const htmlContent = await page.content();
